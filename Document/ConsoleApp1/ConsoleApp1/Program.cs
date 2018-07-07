@@ -20,7 +20,11 @@ namespace ConsoleApp1
                 Console.WriteLine("Enter the name of the document you would like to create.");
 
                 string docName = Console.ReadLine();
-                docName += ".txt";  //add .txt to end of filename
+
+                if (!docName.EndsWith(".txt"))
+                {
+                    docName += ".txt";  //add .txt to end of filename if it didn't already
+                }
 
                 Console.WriteLine("Enter the content of the new document.");
 
