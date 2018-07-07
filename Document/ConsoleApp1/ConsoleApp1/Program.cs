@@ -44,7 +44,7 @@ namespace ConsoleApp1
                 }
                 finally
                 {
-                    Console.WriteLine("Executing finally block.");
+                    Console.WriteLine("{0} was successfully saved. The document contains {1} characters.",docName, docContent.Length);
                 }
 
                 again = GoAgain();  //ask user if they would like to create another file
