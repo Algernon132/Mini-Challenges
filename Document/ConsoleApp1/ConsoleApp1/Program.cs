@@ -32,7 +32,7 @@ namespace ConsoleApp1
 
                 try
                 {
-                    StreamWriter sw = new StreamWriter(docName);
+                    StreamWriter sw = new StreamWriter(docName); //Will save to current directory
 
                     sw.WriteLine(docContent);
 
