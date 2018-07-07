@@ -22,7 +22,22 @@ namespace ConsoleApp1
 
             string docContent = Console.ReadLine();
 
-            
+            try
+            {
+                StreamWriter sw = new StreamWriter(docName);
+
+                sw.WriteLine(docContent);
+
+                sw.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
 
         }
     }
