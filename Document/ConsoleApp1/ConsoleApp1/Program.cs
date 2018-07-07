@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -10,6 +11,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("-----  Document  -----\n");
+            Console.WriteLine("Enter the name of the document you would like to create.");
+
+            string docName = Console.ReadLine();
+            docName += ".txt";  //add .txt to end of filename
+
+            Console.WriteLine("Enter the content of the new document.");
+
+            string docContent = Console.ReadLine();
+
+            
+
         }
     }
 }
