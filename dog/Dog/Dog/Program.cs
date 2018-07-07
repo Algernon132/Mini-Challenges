@@ -12,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace Prog
 {
-    public enum Gender { Male, Female };
+     enum Gender { Male, Female };
 
-     public class Dog
+      class Dog
     {
         public string name;
         public string owner;
